@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offers</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+    header { 
+      background: #b22222; 
+      color: white; 
+      padding: 20px; 
+      text-align: center; 
+    }
+
+    nav { 
+      background: #333; 
+      display: flex; 
+      justify-content: center; 
+    }
+
+    nav a { 
+      color: white; 
+      padding: 14px 20px; 
+      text-decoration: none;
+      transition: background 0.3s;  
+    }
+
+    nav a:hover { 
+      background: #ff6347; 
+    }
+
+    section { 
+      padding: 40px; 
+      text-align: center; 
+    }
+
+    .offers { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      gap: 20px; 
+      padding: 20px; 
+    }
+
+    .offers img { 
+      width: 100%; 
+      border-radius: 10px; 
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;   
+    }
+
+    .offers img:hover {
+      transform: scale(1.03);      
+    }
+
+    .offer-card {
+      background: #fff8f0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;   
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px); 
+    }
+
+    .offer-card h3 {
+      color: #b22222;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🎉 Special Offers 🎉</h1>
+    <p>Grab the best deals while they last!</p>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="admin.html">Administration</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <div class="offers">
+      <div class="offer-card">
+        <img src="/static/pizza.jpg" alt="50% Off Pizza">
+        <h3>50% Off on All Pizzas</h3>
+        <p>Enjoy delicious pizzas at half the price every Monday.</p>
+      </div>
+
+      <div class="offer-card">
+        <img src="/static/burger.jpg" alt="Buy 1 Get 1 Free Burger">
+        <h3>Buy 1 Get 1 Free</h3>
+        <p>Order a burger and get another one absolutely free every Friday.</p>
+      </div>
+
+      <div class="offer-card">
+        <img src="/static/desert.jpg" alt="Free Dessert">
+        <h3>Free Dessert</h3>
+        <p>Get a free dessert with every meal above ₹500.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

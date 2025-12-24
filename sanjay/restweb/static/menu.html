@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    header { 
+      background: #b22222; 
+      color: white; 
+      padding: 20px; 
+      text-align: center; 
+    }
+
+    nav { 
+      background: #333; 
+      display: flex; 
+      justify-content: center; 
+    }
+
+    nav a { 
+      color: white; 
+      padding: 14px 20px; 
+      text-decoration: none; 
+    }
+
+    nav a:hover { 
+      background: #ff6347; 
+    }
+
+    .gallery { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      gap: 20px; 
+      padding: 20px; 
+      text-align: center;
+    }
+
+    .gallery img { 
+      width: 100%; 
+      border-radius: 10px; 
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+
+    .gallery h2 {
+      color: #ed3a3a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Our Menu</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="offers.html">Offers</a>
+    <a href="admin.html">Administration</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="gallery">
+    <h2>Burger</h2>
+    <img src="/static/burger.jpg" alt="Burger">
+
+    <h2>Pizza</h2>
+    <img src="/static/pizza.jpg" alt="Pizza">
+
+    <h2>Pasta</h2>
+    <img src="/static/pasta.jpg" alt="Pasta">
+
+    <h2>Dessert</h2>
+    <img src="/static/desert.jpg" alt="Dessert">
+
+    <h2>Sandwich</h2>
+    <img src="/static/sandwich.webp" alt="Sandwich">
+
+    <h2>Noodles</h2>
+    <img src="/static/noodles.webp" alt="Noodles">
+  </div>
+</body>
+</html>
+

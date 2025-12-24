@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administration</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+    header { 
+      background: #b22222; 
+      color: white; 
+      padding: 20px; 
+      text-align: center; 
+    }
+
+    nav { 
+      background: #333; 
+      display: flex; 
+      justify-content: center; 
+    }
+
+    nav a { 
+      color: white; 
+      padding: 14px 20px; 
+      text-decoration: none; 
+    }
+
+    nav a:hover { 
+      background: #ff6347; 
+    }
+
+    .team { 
+      display: flex; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+      padding: 20px; 
+    }
+
+    .member { 
+      text-align: center; 
+    }
+
+    .member img { 
+      width: 180px; 
+      border-radius: 50%;
+      transition: transform 0.3s;  
+    }
+
+    .member img:hover {
+      transform: scale(1.05);       
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Administration</h1>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="offers.html">Offers</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="team">
+    <div class="member">
+      <img src="/static/chef1.avif" alt="Chef">
+      <p><b>Chef Frank</b></p>
+    </div>
+
+    <div class="member">
+      <img src="/static/chef2.webp" alt="Chef">
+      <p><b>Chef John</b></p>
+    </div>
+
+    <div class="member">
+      <img src="/static/chef3.avif" alt="Chef">
+      <p><b>Chef Mark</b></p>
+    </div>
+
+    <div class="member">
+      <img src="/static/manager.jpg" alt="Manager">
+      <p><b>Manager Johan</b></p>
+    </div> <!-- fixed -->
+
+    <div class="member">
+      <img src="/static/assiatant.jpg" alt="Asst-Manager">
+      <p><b>Manager Josan</b></p>
+    </div>
+  </div>
+</body>
+</html>
